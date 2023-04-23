@@ -1,7 +1,7 @@
 # EFCore-Issue-17936
 This repo is meant to reproduce behavior as described in issue [17936](https://github.com/dotnet/efcore/issues/17936). I'm looking to test the performance difference between using an outer/cross apply vs a join with a windowed function.
 
-A DACPAC for the database along with object scripts can be found in the [EFScenario-Database](https://github.com/MoMack20/EFCore-Issue-17936/tree/main/EFScenario-database) folder.
+A DACPAC for the database along with object scripts can be found in the [EFScenario-Database](https://github.com/MoMack20/EFCore-Issue-17936/tree/main/EFScenario-database) folder. The indexes are also defined with the table definitions.
 
 SQL debug outputs can be found in the [EFCore-Issue-17936/SqlDebugOutput](https://github.com/MoMack20/EFCore-Issue-17936/tree/main/EFCore-Issue-17936/SqlDebugOutput) folder. The files include the SQL code generated for the 2 scenarios (windowed function vs outer apply), query plans, and IO/time statistics.
 
